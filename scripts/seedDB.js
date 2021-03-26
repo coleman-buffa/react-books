@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
-mongoose.connect("mongodb+srv://admin:56uzzPUYmOCw7PYS@cluster0.ctfd0.mongodb.net/react-books");
+mongoose.connect(process.env.MONGODB_URI);
 
 const bookSeed = [
 	{
